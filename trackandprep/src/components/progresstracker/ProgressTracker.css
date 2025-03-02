@@ -1,0 +1,114 @@
+/* Layout */
+.progress-page {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+/* Sidebar Navbar */
+.navbar {
+    width: 80px;
+    height: 100vh;
+    background-color: #7a7575;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    position: fixed;
+}
+
+.profile-pic img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.nav-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.icon {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icon:hover {
+    color: gray;
+}
+
+/* Main Content */
+.progress-container {
+    margin-left: 100px;
+    width: calc(100% - 100px);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Arrange Progress Bars & Pie Chart Side by Side */
+.content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* Progress Bars */
+.progress-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+}
+
+.progress-card {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.progress-card p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Progress Bar Styling */
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #555;
+    border-radius: 10px;
+    position: relative;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Different colors for progress bars */
+.daily {
+    background-color: #ff6b6b;
+}
+
+.weekly {
+    background-color: #ffcc00;
+}
+
+.monthly {
+    background-color: #00cc66;
+}
+
+/* Pie Chart Section */
+.pie-chart-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}

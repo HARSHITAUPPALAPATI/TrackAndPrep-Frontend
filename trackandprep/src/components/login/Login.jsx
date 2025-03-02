@@ -9,35 +9,19 @@ const Login = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
-        // Simulating login validation (replace with API call if needed)
-        if (email === "user@example.com" && password === "password") {
-            alert("Login successful!");
-            navigate("/home"); // Redirect to Home Page
-        } else {
-            alert("Invalid email or password!");
-        }
+        alert("Login successful!");
+        navigate("/");
     };
 
     return (
         <div className="login-container">
             <form className="login-form" onSubmit={handleSubmit}>
                 <h2>Login</h2>
-                <input
-                    type="email"
-                    placeholder="Email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                />
-                <input
-                    type="password"
-                    placeholder="Password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    required
-                />
+                <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+                <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required />
                 <button type="submit">Login</button>
+                <p>New user?</p>
+                <button type="button" onClick={() => navigate("/signup")}>Sign Up</button>
             </form>
         </div>
     );
